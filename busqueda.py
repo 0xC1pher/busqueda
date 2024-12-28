@@ -56,3 +56,9 @@ if salir == True:
     print("-g Busca en buscadores generales")
     print("-d Busca en buscadores de dispositivos")
     exit()
+
+# Crear el archivo y escribir las URLs
+with open('resultados_busqueda.txt', 'w') as f:
+    for buscador in buscadores_utilizados:
+        f.write(buscador + '\n')
+
